@@ -1,0 +1,628 @@
+/* global styles */
+
+body{
+    background-color: #293248  !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+/* icon declration*/
+@font-face {
+  font-family: "icons";
+  src: url(fonts/fonts/icomoon.eot); /* IE9 Compat Modes */
+  src: url(fonts/fonts/icomoon.ttf) format("truetype"),
+    /* Safari, Android, iOS */ url(fonts/fonts/icomoon.svg) format("svg"),
+    /* Legacy iOS */ url(fonts/fonts/icomoon.woff) format("woff"); /* Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.moreIcon::before{
+  font-family: "icons";
+  content:"\e9bd";
+  font-size: 35px;
+  display: block;
+}
+.GithubIcon::before{
+  font-family: "icons";
+  content:"\eab0";
+  font-size: 20px;
+  display: block;
+}
+
+  .containerr {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main {
+    flex: 1 0 auto;
+    display: flex;
+    height: inherit;
+  }
+  
+  .main__side {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-end;
+    width: 30px;
+    background-color: #293248;
+    position: relative;
+    margin-left: 30px;
+    height: 4800px;
+  }
+  
+  .main__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .side-items {
+    position: sticky;
+    width: 100%;
+    bottom: 10px;
+  }
+  
+  .side-item {
+    text-align: center;
+    padding: .25rem;
+    color: white;
+  }
+  
+  .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    color: white;
+
+  }
+  
+  
+  .block + .block {
+    margin-top: 1px;
+  }
+
+
+  .vl {
+    border-left: 2px solid #797F8D;
+    height: 200px;
+  }
+  .iconsSpacing{
+    padding-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.6s;
+  }
+  .iconsSpacing:hover{
+    margin-bottom: 5px;
+  }
+
+.codeFont{
+    font-family: 'Fira Code', monospace !important;
+}
+.nav-link{
+    color: #FFF !important;
+    font-family: 'Fira Code', monospace !important;
+    padding-right: 2.5rem !important;
+}
+
+#TopBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+#home{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4%;
+    margin-bottom: 17%;
+    margin-top: 2%;
+}
+#HomeText{
+    color: #FFF;
+    height: fit-content;
+    margin-block-start: auto;
+}
+
+#computerGraphic{
+    margin-right: 4%;
+    margin-top: 4%;
+}
+
+a.borderBot:hover{
+  border-bottom: solid 1px white;
+}
+
+/* homeTab */
+a.left1
+{
+    position: relative;
+}
+
+a.left1:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    bottom: 0;
+    background-color: #FFF;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+    background-color: #EADB67;
+}
+a.left1:hover:before {
+    visibility: visible;
+    width: 50%;
+  }
+
+  /* ServicesTab */
+  a.left2
+{
+    position: relative;
+}
+
+a.left2:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    bottom: 0;
+    background-color: #FFF;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+    background-color: #EA6767;
+}
+a.left2:hover:before {
+    visibility: visible;
+    width: 60%;
+  }
+  /* ProjectsTab */
+  a.left3
+  {
+      position: relative;
+  }
+  
+  a.left3:before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      bottom: 0;
+      background-color: #FFF;
+      visibility: visible;
+      transition: all 0.3s ease-in-out;
+      background-color: #91EAA6;
+  }
+  a.left3:hover:before {
+      visibility: visible;
+      width: 60%;
+    }
+  /* ContactMeTab */
+
+  a.left4
+  {
+      position: relative;
+  }
+  
+  a.left4:before {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 2px;
+      bottom: 0;
+      background-color: #FFF;
+      visibility: visible;
+      transition: all 0.3s ease-in-out;
+      background-color: #87C0D0;
+  }
+  a.left4:hover:before {
+      visibility: visible;
+      width: 70%;
+    }
+
+
+
+    .bn39 {
+        background-image: linear-gradient(135deg,#91EAA6, #87C0D0);
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #ffffff;
+        display: block;
+        height: 46px;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 1px;
+        position: relative;
+        text-decoration: none;
+        width: 183px;
+        z-index: 2;
+       
+      }
+      
+      .bn39:hover {
+        color: #293248;
+      }
+      
+      .bn39 .bn39span {
+        align-items: center;
+        background: #293248 ;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        transition: background 0.5s ease;
+        width: 100%;
+        border: 0.5px solid #87C0D0;
+      }
+      
+      .bn39:hover .bn39span {
+        background: transparent;
+      }
+
+      #projectHeader{
+        /* margin-left: 12%; */
+        color: #91EAA6;
+            /* padding-top: 50px; */
+      }
+      #ServicesHeader{
+        /* margin-left: 12%; */
+        color: #91EAA6;
+            /* padding-top: 50px; */
+      }
+      #projectsDivSpace{
+        margin-left: 12%;
+      }
+
+      #projects{
+        padding-top: 140px;
+      }
+      .titleHeaderSpacing{
+        margin-top: 80px;
+      }
+      .ProjectImg{
+        width: 500px;
+        height: 320px;
+      }
+      .projectCarousel{
+        width: 500px;
+        height: 320px;
+        border-radius: 25px;
+      }
+      .layer {
+        background-color: linear-gradient(to right, #91eaa64d, rgba(255,0,0,0)),;
+        /* position: absolute; */
+        width: 500px;
+        height: 320px;
+        transition: 00.3s;
+        
+      }
+
+      .layer:hover{
+        background-color: transparent;
+
+      }
+      .projectInfo{
+        display: flex;
+        margin-top: 45px;
+      }
+      .projectDesc{
+        text-align: end;
+       padding-top: 0px;
+      }
+
+      .aRect {
+        display: inline-block;
+        height: 135px; /*sets height of element*/
+        background: #17233E; /*sets the background of this element (here a solid colour)*/
+        transition: all 0.6s; /*sets a transition (for hover effect)*/
+        padding-left: 20px; /*sets 'padding'*/
+        padding-right: 20px; /*sets 'padding'*/
+        line-height: 20px; /*for this, it sets vertical alignment*/
+        margin-left: 48px;
+        text-decoration: none;
+        color: #E1F0E5;
+        width: 570px;
+        font-size: 14px;
+        font-family: 'Fira Code', monospace;
+        padding-top: 22px;
+        border-radius: 8px;
+        text-align: left;
+        
+      }
+      .aRect:hover {
+         /*sets background colour*/
+         color: #87C0D0;
+      }
+      .carousel-item:after {
+        content:"";
+        display:block;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        /* background:linear-gradient(to right, #91eaa64d, rgba(255,0,0,0)); */
+        background-color: black;
+        opacity: 20%;
+        border-radius: 25px;
+      }
+  
+      .TechUsed{
+        color: white; 
+        margin-top: 15px;
+      }
+
+      .TechUsed:hover{
+        color: #91EAA6;
+        transition: all 0.4s ease-in-out;
+        
+      }
+
+      .heyStatmentColors{
+        color: #87C0D0;
+        opacity: 0.63;
+        font-size: 25px;
+      }
+
+      .aboutMeText{
+        color: #D5D5D5;
+        font-size: 25px;
+
+      }
+      .aboutMeContent{
+        margin-left: -180px;
+      }
+      .softwareEngText{
+        font-size: 60px;
+      }
+      .PersonalImg{
+
+        background-image:
+        url('../images/AboutMePic.jpg');
+        height: 155px;
+        width: 180px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 8px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .personalImgLayer{
+        background-color: #91EAA6;
+        height: 155px;
+        width: 180px;
+        opacity: 24%;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .personalImgLayer:hover{
+        background-color: transparent;
+      }
+      .aboutMeHeyPos{
+        display: flex;
+    justify-content: center;
+    color: white;
+      }
+      .hellotxt{
+        color: #91EAA6;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 24px;
+      }
+      .TechHeaders{
+        display: flex;
+        justify-content: space-evenly;
+        color: #91EAA6;
+        font-size: 18px;
+      }
+      .ulTri {  
+        margin: 0.75em 0;  
+        padding: 0 1em;  
+        list-style: none;  
+        color: white;
+    }  
+    .liTri:before {   
+        content: "";  
+        border-color: transparent #91EAA6;  
+        border-style: solid;  
+        border-width: 0.35em 0 0.35em 0.45em;  
+        display: block;  
+        height: 0;  
+        width: 0;  
+        left: -1em;  
+        top: 1.2em;  
+        position: relative;  
+    } 
+    .dispFJustSPar{
+      display: flex;
+      justify-content: center;
+    }
+    .TwoLists{
+      display: flex;
+      width: 10%;
+      justify-content: space-between;
+    }
+
+    #webLists{
+      margin-left: 79px;
+    }
+    .aboutMe-txt{
+      width:49%;
+      text-align: center;
+    }
+    .listsSpacing{
+      margin-left: 20px;
+    }
+    .navbar-light .navbar-toggler-icon{
+      background-image: url('../images/bars.svg')!important;
+      }
+      #contactMeContent{
+        margin-left: -180px;
+      }
+      
+      #MobileSocials{
+        display: none;
+        justify-content: space-around;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      
+      .horzLineBottom{
+        width: 30%;
+        color: white;
+      }
+
+/* media queries*/
+      @media screen and (min-device-width: 1000px) and (max-width: 1400px) {
+
+        .softwareEngText{
+          font-size: 40px;
+        }
+
+        .heyStatmentColors{
+          color: #87C0D0;
+          opacity: 0.63;
+          font-size: 20px;
+        }
+  
+        .aboutMeText{
+          color: #D5D5D5;
+          font-size: 20px;
+  
+        }
+        .aRect{
+          width: 441px;
+          height: 165px;
+        }
+
+      }
+      @media only screen and (max-width: 600px) {
+
+
+
+
+
+      }
+
+      @media only screen and (max-width: 600px) {
+
+        #projectHeader, #ServicesHeader{
+          font-size: 34px;
+        }
+        #MobileSocials{
+          display: flex;
+        }
+        .TechUsed{
+          font-size: 25px;
+        }
+
+        #contactMeContent{
+          margin-left: 0px;
+        }
+        .softwareEngText{
+          font-size: 40px;
+        }
+
+        .heyStatmentColors{
+          color: #87C0D0;
+          opacity: 0.63;
+          font-size: 20px;
+        }
+  
+        .aboutMeText{
+          color: #D5D5D5;
+          font-size: 20px;
+  
+        }
+        .aRect{
+          width: 500px;
+          height: 360px;
+          margin-left: 0px;
+          font-size: 25px;
+          line-height: 35px;
+          text-align: left;
+        }
+        #DeskTopAppRect{
+          height: 400px;
+        }
+        
+        #computerGraphic{
+          display: none;
+        }
+        .projectInfo{
+          display: inline-block;
+        }
+        .main__side{
+          display: none;
+        }
+
+        .aboutMe-txt{
+          width: 100%;
+          font-size: 22px;
+        }
+
+        .aboutMeContent{
+          margin-left: 0px;
+          margin-right: 10%;
+        }
+        .ProjectImg{
+          margin-bottom: 40px;
+        }
+        #rightAlined{
+          display: inline-block !important;
+        }
+
+        .dispFJustSPar{
+          justify-content: start;
+        }
+        #webDevtitle{
+          float: unset !important;
+          margin-left: -34px !important;
+        }
+        #contactMeContent{
+          margin-right: 70px !important;
+        }
+        .left-aligned-imgs{
+          margin-left: 70px;
+        }
+        #ServicesHeader{
+          margin-top: 35px !important;
+        }
+
+        .nav-link{
+          font-size: 25px;
+        }
+
+        .left1{
+
+          margin-top: 25px;
+        }
+        #home{
+          margin-bottom: 0%;
+          margin-top: 10%;
+        }
+        a.left1:hover:before {
+          visibility: visible;
+          width: 18px;
+        }
+        a.left2:hover:before {
+          visibility: visible;
+          width: 25px;
+        }
+        a.left3:hover:before {
+          visibility: visible;
+          width: 30px;
+        }
+        a.left4:hover:before {
+          visibility: visible;
+          width: 35px;
+        }
+    
+        
+      }
+
+
+
